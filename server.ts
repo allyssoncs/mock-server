@@ -1,9 +1,11 @@
 import express from 'express';
+import cors from 'cors';
 import { policyholder, policyholderModality, modality, subsidiary, generateQuote, insured } from './src/database/database';
 import { InsuredModel, PolicyholderModel, SubsidiaryModel } from './src/models';
 
 const app = express();
 app.use(express.json());
+app.use(cors())
 
 app.get('/', (req, res) => {
   return res.send('Hello mock-server!');
@@ -17,7 +19,6 @@ app.get('/policyholder', (req, res) => {
     filteredList = policyholder.filter(policyholder => {
       let searchName = policyholderName.toString().toLowerCase();
       let name = policyholder.name.toLowerCase();
-
       return name.includes(searchName) && policyholder;
     });
   }

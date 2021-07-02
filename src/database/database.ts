@@ -96,6 +96,26 @@ export const policyholderModality = [
     "modalityId": 7
   },
   {
+    "federalId": "15678199000189",
+    "modalityId": 8
+  },
+  {
+    "federalId": "15678199000189",
+    "modalityId": 9
+  },
+  {
+    "federalId": "15678199000189",
+    "modalityId": 10
+  },
+  {
+    "federalId": "15678199000189",
+    "modalityId": 11
+  },
+  {
+    "federalId": "15678199000189",
+    "modalityId": 12
+  },
+  {
     "federalId": "30305574000139",
     "modalityId": 1
   },
@@ -160,6 +180,31 @@ export const modality: ModalityModel[] = [
     "id": 7,
     "description": "Retenção de Pagamento",
     "externalId": 74
+  },
+  {
+    "id": 8,
+    "description": "Conta Reserva",
+    "externalId": 92
+  },
+  {
+    "id": 9,
+    "description": "Administrativo Crédito Tributário",
+    "externalId": 83
+  },
+  {
+    "id": 10,
+    "description": "Executante Concessionário",
+    "externalId": 72
+  },
+  {
+    "id": 11,
+    "description": "Adiantamento de Pagamento",
+    "externalId": 73
+  },
+  {
+    "id": 12,
+    "description": "Processo Administrativo",
+    "externalId": 121
   }
 ]
 
